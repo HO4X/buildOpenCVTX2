@@ -1,5 +1,7 @@
 # buildOpenCVTX2
-Build and install OpenCV for the NVIDIA Jetson TX2
+Build and install OpenCV for the NVIDIA Jetson TX2 with patched Videoio Modul from econsystems 
+
+-> https://github.com/econsystems/opencv
 
 These scripts build OpenCV version 3.4 for the NVIDIA Jetson TX2 Development Kit. Please see Releases/Tags for earlier versions.
 
