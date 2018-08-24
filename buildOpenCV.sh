@@ -110,13 +110,13 @@ cd $OPENCV_SOURCE_DIR
 # Use prepatched opencv instead
 #git clone https://github.com/opencv/opencv.git
 cd opencv
-git checkout -b v${OPENCV_VERSION} ${OPENCV_VERSION}
-if [ $OPENCV_VERSION = 3.4.1 ] ; then
+#git checkout -b v${OPENCV_VERSION} ${OPENCV_VERSION}
+#if [ $OPENCV_VERSION = 3.4.1 ] ; then
   # For 3.4.1, use this commit to fix samples/gpu/CMakeLists.txt
-  git merge ec0bb66
+  #git merge ec0bb66
   # For 3.4.1, use this to fix C compilation issues (like in YOLO)
-  git cherry-pick 549b5df
-fi
+  #git cherry-pick 549b5df
+#fi
 
 if [ $DOWNLOAD_OPENCV_EXTRAS == "YES" ] ; then
  echo "Installing opencv_extras"
