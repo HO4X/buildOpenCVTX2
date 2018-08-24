@@ -107,7 +107,8 @@ sudo apt-get install -y python3-dev python3-numpy python3-py python3-pytest
 sudo apt-get install -y libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev 
 
 cd $OPENCV_SOURCE_DIR
-git clone https://github.com/opencv/opencv.git
+# Use prepatched opencv instead
+#git clone https://github.com/opencv/opencv.git
 cd opencv
 git checkout -b v${OPENCV_VERSION} ${OPENCV_VERSION}
 if [ $OPENCV_VERSION = 3.4.1 ] ; then
